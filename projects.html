@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Brandon McAdoo</a>
+        <a class="navbar-brand">Brandon McAdoo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,48 +48,56 @@
 
 
       <div class="card d-flex flex-column">
-        <img src="Snake_TitleCard.png" class="card-img-top p-2" alt="Image Unavailable">
+        <img src="images/Snake_TitleCard.png" class="card-img-top p-2" alt="Image Unavailable">
         <div class="card-body d-flex flex-column justify-content-middle">
           <h5 class="card-title">Snake</h5>
           <p class="card-text">A web application of the old school game "Snake". Utilizes the HTML canvas element and
             JavaScript.</p>
         </div>
         <div class="card-body d-flex flex-column justify-content-end">
-          <a href="#" class="btn btn-primary disabled" role="button">Learn More</a>
+          <button class="btn btn-primary active" data-bs-toggle="tab" data-bs-target="#snake" type="button" role="tab">Learn More</button>
         </div>
       </div>
 
 
 
       <div class="card d-flex flex-column">
-        <img src="Plinko_TitleCard.png" class="card-img-top p-2" alt="Image Unavailable">
+        <img src="images/Plinko_TitleCard.png" class="card-img-top p-2" alt="Image Unavailable">
         <div class="card-body d-flex flex-column justify-content-middle">
           <h5 class="card-title">Plinko</h5>
           <p class="card-text">An application of "Plinko" built using the HTML canvas element and WebGL for the
             graphics.</p>
         </div>
-        <div class="card-body d-flex flex-column justify-content-end">
-          <a href="#" class="btn btn-primary disabled" role="button">Learn More</a>
+        <div class="card-body d-flex flex-column justify-content-end" role="tablist">
+          <button class="btn btn-primary active" data-bs-toggle="tab" data-bs-target="#plinko" type="button" role="tab">Learn More</button>
         </div>
       </div>
 
 
 
       <div class="card d-flex flex-column">
-        <img src="Wumpus_TitleCard.png" class="card-img-top p-2" alt="Image Unavailable">
+        <img src="images/Wumpus_TitleCard.png" class="card-img-top p-2" alt="Image Unavailable">
         <div class="card-body d-flex flex-column justify-content-middle">
           <h5 class="card-title">Hunt The Wumpus</h5>
           <p class="card-text">A command line game of "Hunt The Wumpus" created in C++.</p>
         </div>
         <div class="card-body d-flex flex-column justify-content-end">
-          <a href="#" class="btn btn-primary disabled" role="button">Learn More</a>
+          <button class="btn btn-primary active" data-bs-toggle="tab" data-bs-target="#wumpus" type="button" role="tab">Learn More</button>
         </div>
       </div>
-
-
     </div>
 
-
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="snake" role="tabpanel">
+        <p>snake</p>
+      </div>
+      <div class="tab-pane fade" id="plinko" role="tabpanel">
+        <p>plinko</p>
+      </div>
+      <div class="tab-pane fade" id="wumpus" role="tabpanel">
+        <p>wumpus</p>
+      </div>
+    </div>
 
 
   </main>
